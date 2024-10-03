@@ -1,5 +1,6 @@
 FROM gcc:latest
 RUN apt update
+RUN apt install gcc
 RUN mkdir C_deploy
 WORKDIR C_deploy
 COPY trial.c ./C_deploy
